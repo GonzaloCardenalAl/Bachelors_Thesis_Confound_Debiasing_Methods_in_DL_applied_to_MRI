@@ -1,0 +1,11 @@
+START_TIME 	 09:10::47
+[DEBUG] using only 50 data points
+dataset loaded successfully in 0m:14s..
+Starting CNN_PIPELINE() with:                
+{'run_id': 'run0', 'model': 'PMDNResNet50DeepRepViz', 'model_params': {'dataset_size': 8364, 'batch_size': 24, 'task_type': 'classif_binary', 'out_classes': 1, 'debug_print': True, 'pretrained_model': '/ritter/share/data/UKBB_2020/trained_model/r3d50_K_200ep.pth'}, 'model_unique_name': 'PMDN_trailmaking', 'inp': 'X', 'out': 'trail_making_avg_duration', 'n_samples': 50, 'm__batch_size': 4, 'm__num_epochs': 5, 'm__criterion': 'MSELoss({})', 'm__optimizer': "Adam({'lr': 0.0005, 'weight_decay': 0.0001})", 'm__scheduler': "StepLR({'step_size': 20, 'gamma': 0.1})", 'm__augmentations': ['SagittalFlip', 'SagittalTranslate'], 'm__earlystop_patience': 0}                
+output_dir: /ritter/share/projects/gonzalo/thesis/PMDN/MLPipeline/CNNPipeline/results//debug_run/20230130-0910                
+using GPU:  cuda:1                 
+---------------- CNNpipeline starting ----------------
+###############hi############
+:: m__n_params:    47122385
+Adjusting learning rate of group 0 to 5.0000e-04.
