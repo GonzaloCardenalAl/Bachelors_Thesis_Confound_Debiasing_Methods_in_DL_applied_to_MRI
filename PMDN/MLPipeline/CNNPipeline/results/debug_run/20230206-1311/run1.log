@@ -1,0 +1,113 @@
+START_TIME 	 13:13::00
+[DEBUG] using only 50 data points
+dataset loaded successfully in 0m:18s..
+Starting CNN_PIPELINE() with:                
+{'run_id': 'run1', 'model': 'PMDNResNet50DeepRepViz', 'model_params': {'dataset_size': 14617, 'batch_size': 4, 'task_type': 'classif_binary', 'out_classes': 1, 'debug_print': True, 'pretrained_model': '/ritter/share/data/UKBB_2020/trained_model/r3d50_K_200ep.pth'}, 'model_unique_name': 'PMDN_highalc', 'inp': 'X', 'out': 'highalc', 'n_samples': 50, 'm__batch_size': 4, 'm__num_epochs': 5, 'm__criterion': "BCEWithLogitsLoss({'reduction': 'mean'})", 'm__optimizer': "Adam({'lr': 0.0005, 'weight_decay': 0.0001})", 'm__scheduler': "StepLR({'step_size': 20, 'gamma': 0.1})", 'm__augmentations': ['SagittalFlip', 'SagittalTranslate'], 'm__earlystop_patience': 0}                
+output_dir: /ritter/share/projects/gonzalo/thesis/PMDN/MLPipeline/CNNPipeline/results//debug_run/20230206-1311                
+using GPU:  cuda:2                 
+---------------- CNNpipeline starting ----------------
+###############hi############
+:: m__n_params:    47122385
+Adjusting learning rate of group 0 to 5.0000e-04.
+[0,     2] loss: 0.67888
+[0,     2] beta loss: 514253.58333
+[0,     4] loss: 0.67675
+[0,     4] beta loss: 532425.98750
+[0,     6] loss: 0.66224
+[0,     6] beta loss: 536970.58036
+[0,     8] loss: 0.65625
+[0,     8] beta loss: 527427.71181
+Time elapsed: 0h:0m:3s
+train balanced_accuracy_score: 50.00 %
+train accuracy_score: 65.00 %
+train explained_deviance: -5.03 %
+train mz_rsquare: 4.56 %
+val loss: 0.54732
+val balanced_accuracy_score: 50.00 %
+val accuracy_score: 87.50 %
+val explained_deviance: -45.27 %
+val mz_rsquare: 4.65 %
+[1,     2] loss: 0.79653
+[1,     2] beta loss: 498868.30208
+[1,     4] loss: 0.71048
+[1,     4] beta loss: 507286.02500
+[1,     6] loss: 0.69768
+[1,     6] beta loss: 507943.61607
+[1,     8] loss: 0.66487
+[1,     8] beta loss: 515825.65972
+Time elapsed: 0h:0m:7s
+train balanced_accuracy_score: 50.00 %
+train accuracy_score: 70.00 %
+train explained_deviance: -16.00 %
+train mz_rsquare: 4.40 %
+val loss: 0.55741
+val balanced_accuracy_score: 50.00 %
+val accuracy_score: 87.50 %
+val explained_deviance: -47.94 %
+val mz_rsquare: 4.09 %
+[2,     2] loss: 0.48430
+[2,     2] beta loss: 545305.78125
+[2,     4] loss: 0.52261
+[2,     4] beta loss: 542702.89375
+[2,     6] loss: 0.60519
+[2,     6] beta loss: 541569.27232
+[2,     8] loss: 0.61725
+[2,     8] beta loss: 541834.14931
+Time elapsed: 0h:0m:10s
+train balanced_accuracy_score: 50.00 %
+train accuracy_score: 70.00 %
+train explained_deviance: -4.14 %
+train mz_rsquare: 4.19 %
+val loss: 0.54710
+val balanced_accuracy_score: 50.00 %
+val accuracy_score: 87.50 %
+val explained_deviance: -45.21 %
+val mz_rsquare: 4.07 %
+[3,     2] loss: 0.50967
+[3,     2] beta loss: 506315.34375
+[3,     4] loss: 0.54938
+[3,     4] beta loss: 505949.43125
+[3,     6] loss: 0.55735
+[3,     6] beta loss: 510225.65179
+[3,     8] loss: 0.62353
+[3,     8] beta loss: 523002.06250
+Time elapsed: 0h:0m:14s
+train balanced_accuracy_score: 50.00 %
+train accuracy_score: 90.00 %
+train explained_deviance: -47.81 %
+train mz_rsquare: 4.08 %
+val loss: 0.54136
+val balanced_accuracy_score: 50.00 %
+val accuracy_score: 87.50 %
+val explained_deviance: -43.68 %
+val mz_rsquare: 4.03 %
+[4,     2] loss: 0.61584
+[4,     2] beta loss: 543985.32292
+[4,     4] loss: 0.61478
+[4,     4] beta loss: 516309.70625
+[4,     6] loss: 0.63216
+[4,     6] beta loss: 512546.59375
+[4,     8] loss: 0.62649
+[4,     8] beta loss: 510440.38542
+Time elapsed: 0h:0m:18s
+train balanced_accuracy_score: 50.00 %
+train accuracy_score: 75.00 %
+train explained_deviance: 2.13 %
+train mz_rsquare: 3.48 %
+val loss: 0.55311
+val balanced_accuracy_score: 50.00 %
+val accuracy_score: 87.50 %
+val explained_deviance: -46.80 %
+val mz_rsquare: 3.01 %
+Total time elapsed: 0h:0m:18s
+Writing model to disk...
+----------------------
+Re-evaluatiing on validation data: 
+----------------------
+eval loss: 0.55311
+eval balanced_accuracy_score: 50.00 %
+eval accuracy_score: 87.50 %
+eval explained_deviance: -46.80 %
+eval mz_rsquare: 3.01 %
+---------------- CNNpipeline completed ----------------
+RAN FOR 0:01:03s

@@ -1,0 +1,29 @@
+nohup: ignoring input
+==================== Running DEBUG MODE ====================
+change RAND_STATE: None -> 42
+changing N_CV_TRIALS: 3 -> 2
+Running all models with 
+ num_epochs: 5 
+ batch_size: 4 
+ earlystop_patience: 0
+========================================================        
+Running CNNpipeline on: /ritter/share/data/UKBB_2020/h5files/t1mniz2-l-highalcl0u2-bingeauditl1u3-alcfreq-c-sex-age-n14617.h5        
+Start time:             2023-02-06 13:11:36.991171        
+Saving results at:      /ritter/share/projects/gonzalo/thesis/PMDN/MLPipeline/CNNPipeline/results//debug_run/20230206-1311
+-------------------------- GPU  STATUS -----------------------------          
+Torch version:     1.11.0          
+CUDA available?    True          
+graphic name:      NVIDIA GeForce RTX 3090          
+using GPUs:        ['cuda:2']          
+memory alloc:      ['0.0 GB']          
+memory cached:     ['0.0 GB']          
+random_seed:       42          
+--------------------------------------------------------------------          
+Loaded model :: PMDN_highalc for {X}->{highalc}
+-----------------------------------------
+missing_keys in current model: ['cfs', 'ln1.weight', 'ln1.bias', 'pmdn1.cfs', 'pmdn1.beta_mdn']
+unexpected_keys in pretrained model: ['fc.weight', 'fc.bias']
+running 2 different combinations of [DL models] x [inp -> out] x [CV trials]
+(0)	 PMDN_highalc	 X-highalc	 cv_i=0
+(1)	 PMDN_highalc	 X-highalc	 cv_i=1
+TOTAL RUNTIME: 0:02:44 secs

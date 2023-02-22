@@ -23,14 +23,14 @@ from sklearn.metrics import *
 # This is exists to avoid the need to repeat these settings.
 common_model_settings = {
     "model": PMDNResNet50DeepRepViz,         
-    "batch_size": 24, "num_epochs": 120, "earlystop_patience": 15,
+    "batch_size": 4, "num_epochs": 120, "earlystop_patience": 15,
     "optimizer": optim.Adam, "optimizer_params": {"lr": 5e-4, "weight_decay": 1e-4},
     "augmentations": [SagittalFlip(prob=0.5), SagittalTranslate(dist=(-4,4))],
     "scheduler": optim.lr_scheduler.StepLR , "scheduler_params" : {"step_size": 20, "gamma": 0.1},
     "rescale_X": True, 
     "show_grad_flow" : True,
-     "cf_name" :"total_brain_volume",
-    "data_hold" : '/ritter/share/projects/gonzalo/h5files/confounds_tasks_3460k_holdout.h5'
+     "cf_name" :"sex",
+    #"data_hold" : '/ritter/share/projects/gonzalo/h5files/confounds_tasks_3460k_holdout.h5'
     
     #"lr_beta" : 1e-2
     }
@@ -50,7 +50,8 @@ class Config:
         #'/ritter/share/data/UKBB_2020/h5filesconfounds_tasks_26k_v2.h5',
        # '/ritter/share/projects/gonzalo/h5files/confounds_tasks_8k_extralbls.h5',
         #'/ritter/share/projects/gonzalo/h5files/confounds_tasks_8735k_train.h5'
-        '/ritter/share/projects/gonzalo/h5files/confounds_tasks_8364k_train.h5'
+        #'/ritter/share/projects/gonzalo/h5files/confounds_tasks_8364k_train.h5'
+        '/ritter/share/data/UKBB_2020/h5files/t1mniz2-l-highalcl0u2-bingeauditl1u3-alcfreq-c-sex-age-n14617.h5'
     ]
     
 
@@ -58,20 +59,19 @@ class Config:
     ANALYSIS = {
     # (2) LABELS: Which cols in the h5 files should be used as 'y' / labels in the analysis 
 ################# Fine-tuning with the parameters loaded from videos ('pretrain' : True, 'feature_extraction' : False (default))
-        
-        'trail_making_avg_duration': 
+
+        'highalc': 
             dict(
-                TASK_TYPE='regression',
-                METRICS=[explained_variance_score],
+                TASK_TYPE='classif_binary',
+                METRICS=[balanced_accuracy_score, accuracy_score, explained_deviance, mz_rsquare],
                 MODEL_SETTINGS =[
                     {**common_model_settings,
-                    "model_name": "PMDN_trailmaking", # unique name to identify this model
-                    "rescale_Y" : True,
-                     "model_params" : {"dataset_size" : 8364, "batch_size" : 24, 
+                    "model_name": "PMDN_highalc", # unique name to identify this model
+                    "model_params" : {"dataset_size" : 14617, "batch_size" : 4, 
                                     'task_type':'classif_binary', "out_classes":1, "debug_print" :True,
-                                       'pretrained_model':'/ritter/share/data/UKBB_2020/trained_model/r3d50_K_200ep.pth'}, 
-                    "criterion": nn.MSELoss,"criterion_params":{},
-                    "balance_loss_weights":False,
+                                      'pretrained_model':'/ritter/share/data/UKBB_2020/trained_model/r3d50_K_200ep.pth'}, 
+                    "criterion": nn.BCEWithLogitsLoss,
+                    "balance_loss_weights":True,
                     "model_weights_init": False},],
                 ), 
     }
@@ -84,8 +84,8 @@ class Config:
   
     # General run SETTING
     N_CV_TRIALS= 3
-    GPUS = [1] 
-    RAND_STATE = 46
+    GPUS = [2] 
+    RAND_STATE = None
     OUT_FOLDER_SUFFIX = '' # unique name suffix to use on the output dir from this run
 """
         
