@@ -1,0 +1,209 @@
+START_TIME 	 12:29::25
+[DEBUG] using only 50 data points
+dataset loaded successfully in 0m:30s..
+Running weigh debiasing method for sex as a confound
+Weights for imbalanced data bias were created...
+tensor([0.8100, 0.5855, 1.3800, 0.5855, 0.8100, 1.3800, 0.8100, 0.8100, 0.8100,
+        0.5855, 0.8100, 0.8100, 0.8100, 1.3800, 0.8100, 0.5855, 1.3800, 1.3800,
+        0.8100, 0.8100, 1.3800, 0.5855, 2.5200, 1.3800, 0.5855, 0.5855, 0.5855,
+        0.8100, 0.5855, 1.3800, 0.5855, 0.8100, 0.8100, 0.8100, 0.8100, 0.8100,
+        2.5200, 1.3800, 0.8100, 1.3800, 1.3800, 0.8100, 0.8100, 0.8100, 0.8100,
+        1.3800, 2.5200, 0.8100, 0.5855, 0.8100], dtype=torch.float64) torch.Size([50])
+Starting CNN_PIPELINE() with:                
+{'run_id': 'run1', 'model': 'ResNet50DeepRepViz', 'model_params': {'out_classes': 1, 'task_type': 'classif_binary', 'freeze_feature_extractor': False, 'pretrained_model': '/ritter/share/data/UKBB_2020/trained_model/r3d50_K_200ep.pth'}, 'model_unique_name': 'ResNet50_alc_binary', 'inp': 'X', 'out': 'highalc', 'n_samples': 50, 'm__batch_size': 4, 'm__num_epochs': 5, 'm__criterion': "BCEWithLogitsLoss({'reduction': 'mean'})", 'm__optimizer': "Adam({'lr': 0.0005, 'weight_decay': 0.0001})", 'm__scheduler': "StepLR({'step_size': 20, 'gamma': 0.1})", 'm__augmentations': ['SagittalFlip', 'SagittalTranslate'], 'm__earlystop_patience': 0}                
+output_dir: /ritter/share/projects/gonzalo/thesis/ML_for_alcohol_misuse/CNNpipeline/results//debug_run/20230130-1227                
+using GPU:  cuda:3                 
+---------------- CNNpipeline starting ----------------
+:: m__n_params:    48205073
+Adjusting learning rate of group 0 to 5.0000e-04.
+DEBUG 328 (tensor([-1.4314, -1.1799, -1.3836, -1.3481], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-2.4076, -2.5587, -2.0335, -2.2031], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([1., 1., 0., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-2.4021, -2.0407, -2.4072, -2.1479], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([1., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+[0,     2] loss: 0.49868
+DEBUG 328 (tensor([-2.2722, -2.2014, -1.7734, -1.8828], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 1., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-2.1892, -1.4587, -1.6090, -2.0018], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 0., 1.], device='cuda:3'), torch.Size([4]))
+[0,     4] loss: 0.46032
+DEBUG 328 (tensor([-1.3999, -1.3825, -1.3165, -1.9971], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([1., 1., 1., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-0.7571, -0.8370, -1.4069, -0.7876], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+[0,     6] loss: 0.59043
+DEBUG 328 (tensor([-0.6019, -0.5883, -1.1591, -0.5931], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([1., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-0.4579, -1.1211, -0.5215, -0.4674], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 1., 0., 1.], device='cuda:3'), torch.Size([4]))
+[0,     8] loss: 0.64905
+DEBUG 328 (tensor([-0.6345, -0.4554, -0.2957, -0.2541], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 1., 0., 0.], device='cuda:3'), torch.Size([4]))
+Time elapsed: 0h:0m:1s
+train balanced_accuracy_score: 50.00 %
+train accuracy_score: 80.00 %
+train mz_rsquare: 10.58 %
+DEBUG LINE 390 (tensor([-2.2213, -2.7041, -2.8914, -2.5478], device='cuda:3'), torch.Size([4]), tensor([0., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG LINE 390 (tensor([-2.7415, -2.6682, -2.5682, -2.9776], device='cuda:3'), torch.Size([4]), tensor([0., 0., 1., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG LINE 390 (tensor([-2.3712, -2.8452], device='cuda:3'), torch.Size([2]), tensor([1., 0.], device='cuda:3'), torch.Size([2]))
+val loss: 0.67937
+val balanced_accuracy_score: 50.00 %
+val accuracy_score: 80.00 %
+val mz_rsquare: 1.48 %
+Adjusting learning rate of group 0 to 5.0000e-04.
+DEBUG 328 (tensor([-0.2992, -0.2902, -0.2666, -0.3484], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([1., 1., 0., 1.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-0.1163, -0.0920, -0.1105, -0.1084], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-0.0497,  0.0029, -0.0292, -0.0849], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+[1,     2] loss: 0.72387
+DEBUG 328 (tensor([-0.1281, -0.1227, -0.0297, -0.0553], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([1., 1., 0., 1.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-0.1229, -0.0972, -0.0853, -0.1449], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 1., 0., 0.], device='cuda:3'), torch.Size([4]))
+[1,     4] loss: 0.70003
+DEBUG 328 (tensor([-0.2248, -0.2280, -0.2103, -0.2058], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 1., 0., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-0.3441, -0.3230, -0.3319, -0.3198], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+[1,     6] loss: 0.63112
+DEBUG 328 (tensor([-0.5122, -0.5049, -0.4847, -0.5091], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 1., 0., 1.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-0.5773, -0.5847, -0.5546, -0.6023], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 1., 0., 0.], device='cuda:3'), torch.Size([4]))
+[1,     8] loss: 0.67248
+DEBUG 328 (tensor([-0.7081, -0.6913, -0.7435, -0.7179], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([1., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+Time elapsed: 0h:0m:3s
+train balanced_accuracy_score: 46.67 %
+train accuracy_score: 70.00 %
+train mz_rsquare: 1.09 %
+DEBUG LINE 390 (tensor([-3.0496, -3.3563, -3.1604, -3.3529], device='cuda:3'), torch.Size([4]), tensor([0., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG LINE 390 (tensor([-3.1050, -3.0582, -3.3491, -3.1970], device='cuda:3'), torch.Size([4]), tensor([0., 0., 1., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG LINE 390 (tensor([-3.1090, -3.2816], device='cuda:3'), torch.Size([2]), tensor([1., 0.], device='cuda:3'), torch.Size([2]))
+val loss: 0.83742
+val balanced_accuracy_score: 50.00 %
+val accuracy_score: 80.00 %
+val mz_rsquare: 0.42 %
+Adjusting learning rate of group 0 to 5.0000e-04.
+DEBUG 328 (tensor([-0.8808, -0.9024, -0.8358, -0.8558], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([1., 0., 1., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-0.9576, -1.0047, -1.0018, -0.9273], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-1.2131, -1.0638, -1.0847, -1.1438], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 0., 1.], device='cuda:3'), torch.Size([4]))
+[2,     2] loss: 0.43535
+DEBUG 328 (tensor([-1.2777, -1.3819, -1.3056, -1.3733], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-1.6748, -1.5502, -1.5559, -1.4806], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([1., 1., 0., 1.], device='cuda:3'), torch.Size([4]))
+[2,     4] loss: 0.65171
+DEBUG 328 (tensor([-1.5230, -1.5409, -1.5242, -1.4449], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 1., 0., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-1.3298, -1.3381, -1.3046, -1.4776], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 0., 1.], device='cuda:3'), torch.Size([4]))
+[2,     6] loss: 0.57498
+DEBUG 328 (tensor([-1.5048, -1.5308, -1.5043, -1.4908], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([1., 1., 0., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-1.2887, -1.2716, -1.3087, -1.3177], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 1., 0.], device='cuda:3'), torch.Size([4]))
+[2,     8] loss: 0.65283
+DEBUG 328 (tensor([-1.1398, -1.2456, -1.1271, -1.1709], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 0., 1.], device='cuda:3'), torch.Size([4]))
+Time elapsed: 0h:0m:5s
+train balanced_accuracy_score: 50.00 %
+train accuracy_score: 60.00 %
+train mz_rsquare: 1.72 %
+DEBUG LINE 390 (tensor([-1.0831, -1.7495, -1.7342, -1.2116], device='cuda:3'), torch.Size([4]), tensor([0., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG LINE 390 (tensor([-1.7063, -1.3410, -1.2289, -1.7652], device='cuda:3'), torch.Size([4]), tensor([0., 0., 1., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG LINE 390 (tensor([-1.0775, -2.0757], device='cuda:3'), torch.Size([2]), tensor([1., 0.], device='cuda:3'), torch.Size([2]))
+val loss: 0.49127
+val balanced_accuracy_score: 50.00 %
+val accuracy_score: 80.00 %
+val mz_rsquare: 3.22 %
+Adjusting learning rate of group 0 to 5.0000e-04.
+DEBUG 328 (tensor([-1.0851, -1.1739, -1.1168, -1.1166], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([1., 0., 0., 1.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-1.0071, -0.9934, -0.9618, -1.0842], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([1., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-0.9449, -0.8904, -0.9018, -0.8512], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([1., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+[3,     2] loss: 0.65968
+DEBUG 328 (tensor([-0.6302, -0.6103, -0.6303, -0.8261], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([1., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-0.5278, -0.7803, -0.5295, -0.5524], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 0., 1.], device='cuda:3'), torch.Size([4]))
+[3,     4] loss: 0.59473
+DEBUG 328 (tensor([-0.8199, -0.5879, -0.5751, -0.5469], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([1., 1., 0., 1.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-0.4942, -0.7642, -0.4883, -0.5016], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 0., 1.], device='cuda:3'), torch.Size([4]))
+[3,     6] loss: 0.58156
+DEBUG 328 (tensor([-0.6362, -0.6733, -0.7308, -0.6182], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-0.5184, -0.5466, -0.5293, -0.8170], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+[3,     8] loss: 0.54942
+DEBUG 328 (tensor([-0.8777, -0.8578, -0.9339, -0.8303], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([1., 0., 0., 1.], device='cuda:3'), torch.Size([4]))
+Time elapsed: 0h:0m:7s
+train balanced_accuracy_score: 50.00 %
+train accuracy_score: 75.00 %
+train mz_rsquare: 1.69 %
+DEBUG LINE 390 (tensor([ -7.5156, -25.3142, -26.2075, -17.0204], device='cuda:3'), torch.Size([4]), tensor([0., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG LINE 390 (tensor([-25.4628, -20.3465, -17.5047, -28.1561], device='cuda:3'), torch.Size([4]), tensor([0., 0., 1., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG LINE 390 (tensor([-11.4729, -31.7057], device='cuda:3'), torch.Size([2]), tensor([1., 0.], device='cuda:3'), torch.Size([2]))
+val loss: 3.37093
+val balanced_accuracy_score: 50.00 %
+val accuracy_score: 80.00 %
+val mz_rsquare: 94.18 %
+Adjusting learning rate of group 0 to 5.0000e-04.
+DEBUG 328 (tensor([-0.6067, -0.9815, -0.6140, -0.6183], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 0., 1.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-0.5877, -0.5797, -1.0783, -0.5760], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 0., 1.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-1.1772, -0.8175, -0.7891, -0.8986], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([1., 1., 1., 0.], device='cuda:3'), torch.Size([4]))
+[4,     2] loss: 0.52425
+DEBUG 328 (tensor([-1.1779, -1.0226, -0.7480, -0.7637], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([1., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-1.1900, -0.7663, -1.0686, -0.7554], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 1., 0., 1.], device='cuda:3'), torch.Size([4]))
+[4,     4] loss: 0.60896
+DEBUG 328 (tensor([-0.6719, -1.3931, -0.5713, -0.5558], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-0.6779, -0.9766, -0.8887, -1.2870], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+[4,     6] loss: 0.52589
+DEBUG 328 (tensor([-0.6868, -0.5708, -1.5533, -0.7324], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 1., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG 328 (tensor([-1.3348, -0.9087, -0.8237, -1.2575], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 1., 0.], device='cuda:3'), torch.Size([4]))
+[4,     8] loss: 0.58603
+DEBUG 328 (tensor([-1.0017, -1.5035, -1.1277, -0.7281], device='cuda:3',
+       grad_fn=<SqueezeBackward0>), torch.Size([4]), tensor([0., 0., 1., 1.], device='cuda:3'), torch.Size([4]))
+Time elapsed: 0h:0m:9s
+train balanced_accuracy_score: 50.00 %
+train accuracy_score: 65.00 %
+train mz_rsquare: 1.53 %
+DEBUG LINE 390 (tensor([ -5.6850, -20.9053, -21.3765, -13.3449], device='cuda:3'), torch.Size([4]), tensor([0., 0., 0., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG LINE 390 (tensor([-20.5942, -14.6445, -14.1819, -20.3729], device='cuda:3'), torch.Size([4]), tensor([0., 0., 1., 0.], device='cuda:3'), torch.Size([4]))
+DEBUG LINE 390 (tensor([ -7.2641, -24.5291], device='cuda:3'), torch.Size([2]), tensor([1., 0.], device='cuda:3'), torch.Size([2]))
+val loss: 2.39290
+val balanced_accuracy_score: 50.00 %
+val accuracy_score: 80.00 %
+val mz_rsquare: 91.63 %
+Adjusting learning rate of group 0 to 5.0000e-04.
+Total time elapsed: 0h:0m:20s
+Writing model to disk...
+----------------------
+Re-evaluatiing on validation data: 
+----------------------
+eval loss: 2.39290
+eval balanced_accuracy_score: 50.00 %
+eval accuracy_score: 80.00 %
+eval mz_rsquare: 91.63 %
+---------------- CNNpipeline completed ----------------
+RAN FOR 0:00:53s

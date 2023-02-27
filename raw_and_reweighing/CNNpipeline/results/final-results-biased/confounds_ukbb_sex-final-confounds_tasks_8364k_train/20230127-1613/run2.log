@@ -1,0 +1,689 @@
+START_TIME 	 23:11::52
+dataset loaded successfully in 11m:5s..
+Starting CNN_PIPELINE() with:                
+{'run_id': 'run2', 'model': 'ResNet50DeepRepViz', 'model_params': {'out_classes': 1, 'task_type': 'classif_binary', 'freeze_feature_extractor': False, 'pretrained_model': '/ritter/share/data/UKBB_2020/trained_model/r3d50_K_200ep.pth'}, 'model_unique_name': 'ResNet50_sex', 'inp': 'X', 'out': 'sex', 'n_samples': 8364, 'm__batch_size': 24, 'm__num_epochs': 120, 'm__criterion': "BCEWithLogitsLoss({'reduction': 'mean'})", 'm__optimizer': "Adam({'lr': 0.0005, 'weight_decay': 0.0001})", 'm__scheduler': "StepLR({'step_size': 20, 'gamma': 0.1})", 'm__augmentations': ['SagittalFlip', 'SagittalTranslate'], 'm__earlystop_patience': 15}                
+output_dir: /ritter/share/projects/gonzalo/thesis/ML_for_alcohol_misuse/CNNpipeline/results//confounds_ukbb_sex-final-confounds_tasks_8364k_train/20230127-1613                
+using GPU:  cuda:0                 
+---------------- CNNpipeline starting ----------------
+:: m__n_params:    48205073
+[0,    58] loss: 0.03926
+[0,   116] loss: 0.03594
+[0,   174] loss: 0.04122
+[0,   232] loss: 0.04388
+Time elapsed: 0h:2m:59s
+train balanced_accuracy_score: 97.97 %
+train accuracy_score: 98.08 %
+train explained_deviance: 94.54 %
+train mz_rsquare: 97.57 %
+val loss: 0.02448
+val balanced_accuracy_score: 98.89 %
+val accuracy_score: 98.92 %
+val explained_deviance: 96.44 %
+val mz_rsquare: 97.91 %
+[1,    58] loss: 0.01707
+[1,   116] loss: 0.02467
+[1,   174] loss: 0.03335
+[1,   232] loss: 0.03909
+Time elapsed: 0h:6m:38s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 98.53 %
+train mz_rsquare: 96.82 %
+val loss: 1.69233
+val balanced_accuracy_score: 68.63 %
+val accuracy_score: 67.58 %
+val explained_deviance: -148.22 %
+val mz_rsquare: 98.49 %
+[2,    58] loss: 0.01958
+[2,   116] loss: 0.03241
+[2,   174] loss: 0.03222
+[2,   232] loss: 0.02956
+Time elapsed: 0h:10m:14s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 98.04 %
+train mz_rsquare: 97.14 %
+val loss: 0.09405
+val balanced_accuracy_score: 96.21 %
+val accuracy_score: 96.34 %
+val explained_deviance: 86.32 %
+val mz_rsquare: 97.73 %
+[3,    58] loss: 0.01410
+[3,   116] loss: 0.01943
+[3,   174] loss: 0.01824
+[3,   232] loss: 0.01954
+Time elapsed: 0h:13m:52s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.64 %
+train mz_rsquare: 97.71 %
+val loss: 0.02101
+val balanced_accuracy_score: 99.29 %
+val accuracy_score: 99.32 %
+val explained_deviance: 96.99 %
+val mz_rsquare: 96.62 %
+[4,    58] loss: 0.02052
+[4,   116] loss: 0.02921
+[4,   174] loss: 0.02942
+[4,   232] loss: 0.03051
+Time elapsed: 0h:17m:29s
+train balanced_accuracy_score: 98.03 %
+train accuracy_score: 98.08 %
+train explained_deviance: 93.83 %
+train mz_rsquare: 97.64 %
+val loss: 0.59944
+val balanced_accuracy_score: 79.44 %
+val accuracy_score: 80.13 %
+val explained_deviance: 13.37 %
+val mz_rsquare: 97.42 %
+[5,    58] loss: 0.02174
+[5,   116] loss: 0.01906
+[5,   174] loss: 0.01711
+[5,   232] loss: 0.01605
+Time elapsed: 0h:21m:4s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 98.94 %
+train mz_rsquare: 97.65 %
+val loss: 0.11510
+val balanced_accuracy_score: 94.81 %
+val accuracy_score: 94.98 %
+val explained_deviance: 83.27 %
+val mz_rsquare: 96.77 %
+[6,    58] loss: 0.01263
+[6,   116] loss: 0.01606
+[6,   174] loss: 0.02030
+[6,   232] loss: 0.02210
+Time elapsed: 0h:24m:42s
+train balanced_accuracy_score: 99.02 %
+train accuracy_score: 99.04 %
+train explained_deviance: 95.89 %
+train mz_rsquare: 98.06 %
+val loss: 0.03624
+val balanced_accuracy_score: 98.75 %
+val accuracy_score: 98.71 %
+val explained_deviance: 94.79 %
+val mz_rsquare: 98.36 %
+[7,    58] loss: 0.02094
+[7,   116] loss: 0.02626
+[7,   174] loss: 0.02561
+[7,   232] loss: 0.02688
+Time elapsed: 0h:28m:18s
+train balanced_accuracy_score: 97.18 %
+train accuracy_score: 97.12 %
+train explained_deviance: 89.77 %
+train mz_rsquare: 98.03 %
+val loss: 2.79167
+val balanced_accuracy_score: 58.99 %
+val accuracy_score: 57.60 %
+val explained_deviance: -313.78 %
+val mz_rsquare: 98.68 %
+[8,    58] loss: 0.04093
+[8,   116] loss: 0.03075
+[8,   174] loss: 0.03027
+[8,   232] loss: 0.02456
+Time elapsed: 0h:31m:56s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 98.82 %
+train mz_rsquare: 97.70 %
+val loss: 0.01964
+val balanced_accuracy_score: 99.15 %
+val accuracy_score: 99.18 %
+val explained_deviance: 97.15 %
+val mz_rsquare: 97.92 %
+[9,    58] loss: 0.02554
+[9,   116] loss: 0.02582
+[9,   174] loss: 0.02850
+[9,   232] loss: 0.02763
+Time elapsed: 0h:35m:38s
+train balanced_accuracy_score: 99.09 %
+train accuracy_score: 99.04 %
+train explained_deviance: 93.08 %
+train mz_rsquare: 98.02 %
+val loss: 0.02694
+val balanced_accuracy_score: 98.97 %
+val accuracy_score: 99.00 %
+val explained_deviance: 96.08 %
+val mz_rsquare: 97.76 %
+[10,    58] loss: 0.01746
+[10,   116] loss: 0.01580
+[10,   174] loss: 0.01800
+[10,   232] loss: 0.01528
+Time elapsed: 0h:39m:20s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.22 %
+train mz_rsquare: 98.08 %
+val loss: 0.01673
+val balanced_accuracy_score: 99.44 %
+val accuracy_score: 99.43 %
+val explained_deviance: 97.57 %
+val mz_rsquare: 98.20 %
+[11,    58] loss: 0.00309
+[11,   116] loss: 0.01037
+[11,   174] loss: 0.01991
+[11,   232] loss: 0.02134
+Time elapsed: 0h:43m:1s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.43 %
+train mz_rsquare: 98.11 %
+val loss: 0.02754
+val balanced_accuracy_score: 99.03 %
+val accuracy_score: 99.07 %
+val explained_deviance: 96.00 %
+val mz_rsquare: 97.83 %
+[12,    58] loss: 0.00937
+[12,   116] loss: 0.00767
+[12,   174] loss: 0.00990
+[12,   232] loss: 0.01577
+Time elapsed: 0h:46m:47s
+train balanced_accuracy_score: 97.00 %
+train accuracy_score: 97.12 %
+train explained_deviance: 91.76 %
+train mz_rsquare: 98.11 %
+val loss: 0.02199
+val balanced_accuracy_score: 99.30 %
+val accuracy_score: 99.28 %
+val explained_deviance: 96.80 %
+val mz_rsquare: 97.44 %
+[13,    58] loss: 0.02863
+[13,   116] loss: 0.03023
+[13,   174] loss: 0.02435
+[13,   232] loss: 0.02080
+Time elapsed: 0h:50m:30s
+train balanced_accuracy_score: 98.33 %
+train accuracy_score: 98.08 %
+train explained_deviance: 93.55 %
+train mz_rsquare: 97.88 %
+val loss: 0.02434
+val balanced_accuracy_score: 99.10 %
+val accuracy_score: 99.07 %
+val explained_deviance: 96.46 %
+val mz_rsquare: 98.01 %
+[14,    58] loss: 0.00605
+[14,   116] loss: 0.00479
+[14,   174] loss: 0.00652
+[14,   232] loss: 0.00920
+Time elapsed: 0h:54m:12s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 98.94 %
+train mz_rsquare: 98.14 %
+val loss: 2.09317
+val balanced_accuracy_score: 64.89 %
+val accuracy_score: 63.70 %
+val explained_deviance: -205.64 %
+val mz_rsquare: 98.40 %
+[15,    58] loss: 0.06647
+[15,   116] loss: 0.06192
+[15,   174] loss: 0.04768
+[15,   232] loss: 0.04108
+Time elapsed: 0h:57m:55s
+train balanced_accuracy_score: 98.08 %
+train accuracy_score: 98.08 %
+train explained_deviance: 92.20 %
+train mz_rsquare: 97.24 %
+val loss: 0.31009
+val balanced_accuracy_score: 91.50 %
+val accuracy_score: 91.21 %
+val explained_deviance: 54.91 %
+val mz_rsquare: 98.43 %
+[16,    58] loss: 0.03894
+[16,   116] loss: 0.02997
+[16,   174] loss: 0.02529
+[16,   232] loss: 0.02720
+Time elapsed: 1h:1m:41s
+train balanced_accuracy_score: 99.04 %
+train accuracy_score: 99.04 %
+train explained_deviance: 98.03 %
+train mz_rsquare: 97.62 %
+val loss: 1.08640
+val balanced_accuracy_score: 69.99 %
+val accuracy_score: 68.97 %
+val explained_deviance: -56.99 %
+val mz_rsquare: 97.74 %
+[17,    58] loss: 0.00919
+[17,   116] loss: 0.01357
+[17,   174] loss: 0.01299
+[17,   232] loss: 0.01415
+Time elapsed: 1h:5m:27s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.48 %
+train mz_rsquare: 97.93 %
+val loss: 0.02360
+val balanced_accuracy_score: 99.23 %
+val accuracy_score: 99.25 %
+val explained_deviance: 96.57 %
+val mz_rsquare: 98.46 %
+[18,    58] loss: 0.01988
+[18,   116] loss: 0.01614
+[18,   174] loss: 0.01344
+[18,   232] loss: 0.01509
+Time elapsed: 1h:9m:10s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 98.96 %
+train mz_rsquare: 98.22 %
+val loss: 1.80688
+val balanced_accuracy_score: 61.94 %
+val accuracy_score: 60.65 %
+val explained_deviance: -163.81 %
+val mz_rsquare: 98.43 %
+[19,    58] loss: 0.01678
+[19,   116] loss: 0.01328
+[19,   174] loss: 0.01298
+[19,   232] loss: 0.01155
+Time elapsed: 1h:12m:54s
+train balanced_accuracy_score: 99.19 %
+train accuracy_score: 99.04 %
+train explained_deviance: 95.43 %
+train mz_rsquare: 98.17 %
+val loss: 0.03544
+val balanced_accuracy_score: 98.72 %
+val accuracy_score: 98.67 %
+val explained_deviance: 94.90 %
+val mz_rsquare: 98.28 %
+[20,    58] loss: 0.00770
+[20,   116] loss: 0.00538
+[20,   174] loss: 0.00566
+[20,   232] loss: 0.00486
+Time elapsed: 1h:16m:34s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.59 %
+train mz_rsquare: 98.30 %
+val loss: 0.01058
+val balanced_accuracy_score: 99.71 %
+val accuracy_score: 99.71 %
+val explained_deviance: 98.46 %
+val mz_rsquare: 98.40 %
+[21,    58] loss: 0.00311
+[21,   116] loss: 0.00219
+[21,   174] loss: 0.00194
+[21,   232] loss: 0.00185
+Time elapsed: 1h:20m:15s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.90 %
+train mz_rsquare: 98.44 %
+val loss: 0.00945
+val balanced_accuracy_score: 99.78 %
+val accuracy_score: 99.78 %
+val explained_deviance: 98.63 %
+val mz_rsquare: 98.40 %
+[22,    58] loss: 0.00676
+[22,   116] loss: 0.00559
+[22,   174] loss: 0.00402
+[22,   232] loss: 0.00323
+Time elapsed: 1h:23m:58s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.95 %
+train mz_rsquare: 98.47 %
+val loss: 0.00913
+val balanced_accuracy_score: 99.82 %
+val accuracy_score: 99.82 %
+val explained_deviance: 98.67 %
+val mz_rsquare: 98.43 %
+[23,    58] loss: 0.00096
+[23,   116] loss: 0.00146
+[23,   174] loss: 0.00175
+[23,   232] loss: 0.00144
+Time elapsed: 1h:27m:43s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.92 %
+train mz_rsquare: 98.54 %
+val loss: 0.01048
+val balanced_accuracy_score: 99.68 %
+val accuracy_score: 99.68 %
+val explained_deviance: 98.48 %
+val mz_rsquare: 98.44 %
+[24,    58] loss: 0.00086
+[24,   116] loss: 0.00088
+[24,   174] loss: 0.00094
+[24,   232] loss: 0.00104
+Time elapsed: 1h:31m:27s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.72 %
+train mz_rsquare: 98.48 %
+val loss: 0.00845
+val balanced_accuracy_score: 99.79 %
+val accuracy_score: 99.78 %
+val explained_deviance: 98.77 %
+val mz_rsquare: 98.46 %
+[25,    58] loss: 0.00072
+[25,   116] loss: 0.00076
+[25,   174] loss: 0.00170
+[25,   232] loss: 0.00153
+Time elapsed: 1h:35m:12s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.92 %
+train mz_rsquare: 98.56 %
+val loss: 0.00840
+val balanced_accuracy_score: 99.78 %
+val accuracy_score: 99.78 %
+val explained_deviance: 98.78 %
+val mz_rsquare: 98.46 %
+[26,    58] loss: 0.00090
+[26,   116] loss: 0.00080
+[26,   174] loss: 0.00071
+[26,   232] loss: 0.00061
+Time elapsed: 1h:38m:58s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.97 %
+train mz_rsquare: 98.55 %
+val loss: 0.00828
+val balanced_accuracy_score: 99.82 %
+val accuracy_score: 99.82 %
+val explained_deviance: 98.80 %
+val mz_rsquare: 98.42 %
+[27,    58] loss: 0.00081
+[27,   116] loss: 0.00080
+[27,   174] loss: 0.00069
+[27,   232] loss: 0.00093
+Time elapsed: 1h:42m:46s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.95 %
+train mz_rsquare: 98.52 %
+val loss: 0.00965
+val balanced_accuracy_score: 99.65 %
+val accuracy_score: 99.64 %
+val explained_deviance: 98.60 %
+val mz_rsquare: 98.39 %
+[28,    58] loss: 0.00041
+[28,   116] loss: 0.00044
+[28,   174] loss: 0.00043
+[28,   232] loss: 0.00041
+Time elapsed: 1h:46m:36s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.98 %
+train mz_rsquare: 98.47 %
+val loss: 0.00795
+val balanced_accuracy_score: 99.79 %
+val accuracy_score: 99.78 %
+val explained_deviance: 98.84 %
+val mz_rsquare: 98.46 %
+[29,    58] loss: 0.00090
+[29,   116] loss: 0.00079
+[29,   174] loss: 0.00067
+[29,   232] loss: 0.00059
+Time elapsed: 1h:50m:24s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.98 %
+train mz_rsquare: 98.53 %
+val loss: 0.00838
+val balanced_accuracy_score: 99.79 %
+val accuracy_score: 99.78 %
+val explained_deviance: 98.78 %
+val mz_rsquare: 98.56 %
+[30,    58] loss: 0.00058
+[30,   116] loss: 0.00059
+[30,   174] loss: 0.00066
+[30,   232] loss: 0.00056
+Time elapsed: 1h:54m:10s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.98 %
+train mz_rsquare: 98.51 %
+val loss: 0.00704
+val balanced_accuracy_score: 99.82 %
+val accuracy_score: 99.82 %
+val explained_deviance: 98.98 %
+val mz_rsquare: 98.34 %
+[31,    58] loss: 0.00048
+[31,   116] loss: 0.00035
+[31,   174] loss: 0.00038
+[31,   232] loss: 0.00036
+Time elapsed: 1h:57m:55s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.99 %
+train mz_rsquare: 98.55 %
+val loss: 0.00691
+val balanced_accuracy_score: 99.82 %
+val accuracy_score: 99.82 %
+val explained_deviance: 99.00 %
+val mz_rsquare: 98.46 %
+[32,    58] loss: 0.00034
+[32,   116] loss: 0.00033
+[32,   174] loss: 0.00033
+[32,   232] loss: 0.00030
+Time elapsed: 2h:1m:39s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.98 %
+train mz_rsquare: 98.54 %
+val loss: 0.00705
+val balanced_accuracy_score: 99.79 %
+val accuracy_score: 99.78 %
+val explained_deviance: 98.97 %
+val mz_rsquare: 98.51 %
+[33,    58] loss: 0.00109
+[33,   116] loss: 0.00067
+[33,   174] loss: 0.00057
+[33,   232] loss: 0.00055
+Time elapsed: 2h:5m:20s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.21 %
+train mz_rsquare: 98.49 %
+val loss: 0.00719
+val balanced_accuracy_score: 99.82 %
+val accuracy_score: 99.82 %
+val explained_deviance: 98.95 %
+val mz_rsquare: 98.29 %
+[34,    58] loss: 0.00048
+[34,   116] loss: 0.00045
+[34,   174] loss: 0.00048
+[34,   232] loss: 0.00048
+Time elapsed: 2h:9m:3s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.98 %
+train mz_rsquare: 98.51 %
+val loss: 0.00686
+val balanced_accuracy_score: 99.86 %
+val accuracy_score: 99.86 %
+val explained_deviance: 99.00 %
+val mz_rsquare: 98.37 %
+[35,    58] loss: 0.00087
+[35,   116] loss: 0.00088
+[35,   174] loss: 0.00122
+[35,   232] loss: 0.00100
+Time elapsed: 2h:12m:44s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.96 %
+train mz_rsquare: 98.50 %
+val loss: 0.00760
+val balanced_accuracy_score: 99.78 %
+val accuracy_score: 99.78 %
+val explained_deviance: 98.90 %
+val mz_rsquare: 98.32 %
+[36,    58] loss: 0.00072
+[36,   116] loss: 0.00050
+[36,   174] loss: 0.00142
+[36,   232] loss: 0.00134
+Time elapsed: 2h:16m:26s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.54 %
+train mz_rsquare: 98.36 %
+val loss: 0.01742
+val balanced_accuracy_score: 99.51 %
+val accuracy_score: 99.50 %
+val explained_deviance: 97.47 %
+val mz_rsquare: 98.25 %
+[37,    58] loss: 0.00050
+[37,   116] loss: 0.00047
+[37,   174] loss: 0.00041
+[37,   232] loss: 0.00038
+Time elapsed: 2h:20m:8s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.96 %
+train mz_rsquare: 98.40 %
+val loss: 0.00776
+val balanced_accuracy_score: 99.72 %
+val accuracy_score: 99.71 %
+val explained_deviance: 98.87 %
+val mz_rsquare: 98.25 %
+[38,    58] loss: 0.00036
+[38,   116] loss: 0.00027
+[38,   174] loss: 0.00061
+[38,   232] loss: 0.00105
+Time elapsed: 2h:23m:50s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.90 %
+train mz_rsquare: 98.45 %
+val loss: 0.02682
+val balanced_accuracy_score: 98.82 %
+val accuracy_score: 98.78 %
+val explained_deviance: 96.10 %
+val mz_rsquare: 98.20 %
+[39,    58] loss: 0.00058
+[39,   116] loss: 0.00062
+[39,   174] loss: 0.00154
+[39,   232] loss: 0.00131
+Time elapsed: 2h:27m:32s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.86 %
+train mz_rsquare: 98.27 %
+val loss: 0.00780
+val balanced_accuracy_score: 99.83 %
+val accuracy_score: 99.82 %
+val explained_deviance: 98.87 %
+val mz_rsquare: 98.29 %
+[40,    58] loss: 0.00035
+[40,   116] loss: 0.00060
+[40,   174] loss: 0.00048
+[40,   232] loss: 0.00046
+Time elapsed: 2h:31m:14s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.98 %
+train mz_rsquare: 98.42 %
+val loss: 0.00768
+val balanced_accuracy_score: 99.83 %
+val accuracy_score: 99.82 %
+val explained_deviance: 98.88 %
+val mz_rsquare: 98.28 %
+[41,    58] loss: 0.00059
+[41,   116] loss: 0.00076
+[41,   174] loss: 0.00062
+[41,   232] loss: 0.00054
+Time elapsed: 2h:34m:56s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.93 %
+train mz_rsquare: 98.43 %
+val loss: 0.00768
+val balanced_accuracy_score: 99.83 %
+val accuracy_score: 99.82 %
+val explained_deviance: 98.88 %
+val mz_rsquare: 98.39 %
+[42,    58] loss: 0.00023
+[42,   116] loss: 0.00026
+[42,   174] loss: 0.00029
+[42,   232] loss: 0.00030
+Time elapsed: 2h:38m:39s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.98 %
+train mz_rsquare: 98.39 %
+val loss: 0.00756
+val balanced_accuracy_score: 99.83 %
+val accuracy_score: 99.82 %
+val explained_deviance: 98.90 %
+val mz_rsquare: 98.37 %
+[43,    58] loss: 0.00030
+[43,   116] loss: 0.00032
+[43,   174] loss: 0.00039
+[43,   232] loss: 0.00047
+Time elapsed: 2h:42m:23s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.98 %
+train mz_rsquare: 98.47 %
+val loss: 0.00685
+val balanced_accuracy_score: 99.82 %
+val accuracy_score: 99.82 %
+val explained_deviance: 99.00 %
+val mz_rsquare: 98.35 %
+[44,    58] loss: 0.00033
+[44,   116] loss: 0.00038
+[44,   174] loss: 0.00035
+[44,   232] loss: 0.00034
+Time elapsed: 2h:46m:9s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.88 %
+train mz_rsquare: 98.41 %
+val loss: 0.00741
+val balanced_accuracy_score: 99.79 %
+val accuracy_score: 99.78 %
+val explained_deviance: 98.92 %
+val mz_rsquare: 98.33 %
+[45,    58] loss: 0.00038
+[45,   116] loss: 0.00037
+[45,   174] loss: 0.00037
+[45,   232] loss: 0.00042
+Time elapsed: 2h:49m:54s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.98 %
+train mz_rsquare: 98.43 %
+val loss: 0.00754
+val balanced_accuracy_score: 99.83 %
+val accuracy_score: 99.82 %
+val explained_deviance: 98.90 %
+val mz_rsquare: 98.40 %
+[46,    58] loss: 0.00017
+[46,   116] loss: 0.00024
+[46,   174] loss: 0.00027
+[46,   232] loss: 0.00029
+Time elapsed: 2h:53m:42s
+train balanced_accuracy_score: 100.00 %
+train accuracy_score: 100.00 %
+train explained_deviance: 99.98 %
+train mz_rsquare: 98.43 %
+val loss: 0.00685
+val balanced_accuracy_score: 99.82 %
+val accuracy_score: 99.82 %
+val explained_deviance: 99.00 %
+val mz_rsquare: 98.44 %
+Early stopping with window mode at epoch 46.
+Best results were achieved at epoch 31 with val metric score = 0.006912251585940522.
+Best window of size 2 achieved a mean result of 0.006977700177603998 and started at epoch 30.
+Total time elapsed: 2h:54m:23s
+Writing model to disk...
+----------------------
+Re-evaluatiing on validation data: 
+----------------------
+eval loss: 0.00685
+eval balanced_accuracy_score: 99.82 %
+eval accuracy_score: 99.82 %
+eval explained_deviance: 99.00 %
+eval mz_rsquare: 98.44 %
+----------------------
+Evaluation on holdout data: 
+----------------------
+eval loss: 0.03015
+eval balanced_accuracy_score: 98.81 %
+eval accuracy_score: 98.84 %
+eval explained_deviance: 95.61 %
+eval mz_rsquare: 98.43 %
+---------------- CNNpipeline completed ----------------
+RAN FOR 3:00:31s

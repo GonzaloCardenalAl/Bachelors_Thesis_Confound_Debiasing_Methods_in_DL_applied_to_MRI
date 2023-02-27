@@ -1,0 +1,465 @@
+START_TIME 	 16:14::04
+dataset loaded successfully in 11m:43s..
+Starting CNN_PIPELINE() with:                
+{'run_id': 'run0', 'model': 'ResNet50DeepRepViz', 'model_params': {'task_type': 'regression', 'freeze_feature_extractor': False, 'pretrained_model': '/ritter/share/data/UKBB_2020/trained_model/r3d50_K_200ep.pth'}, 'model_unique_name': 'ResNet50_trailmaking_regression', 'inp': 'X', 'out': 'trail_making_avg_duration', 'n_samples': 8364, 'm__batch_size': 24, 'm__num_epochs': 120, 'm__criterion': 'MSELoss({})', 'm__optimizer': "Adam({'lr': 0.0005, 'weight_decay': 0.0001})", 'm__scheduler': "StepLR({'step_size': 20, 'gamma': 0.1})", 'm__augmentations': ['SagittalFlip', 'SagittalTranslate'], 'm__earlystop_patience': 15}                
+output_dir: /ritter/share/projects/gonzalo/thesis/ML_for_alcohol_misuse/CNNpipeline/results//confounds_ukbb_trailmaking-final-confounds_tasks_8364k_train/20230127-1614                
+using GPU:  cuda:2                 
+---------------- CNNpipeline starting ----------------
+:: m__n_params:    48205073
+[0,    58] loss: 0.23309
+[0,   116] loss: 0.12376
+[0,   174] loss: 0.08725
+[0,   232] loss: 0.06884
+Time elapsed: 0h:3m:23s
+train explained_variance_score: -272.59 %
+val loss: 0.01285
+val explained_variance_score: 3.70 %
+[1,    58] loss: 0.01218
+[1,   116] loss: 0.01265
+[1,   174] loss: 0.01266
+[1,   232] loss: 0.01251
+Time elapsed: 0h:7m:31s
+train explained_variance_score: -5.84 %
+val loss: 0.01282
+val explained_variance_score: 0.74 %
+[2,    58] loss: 0.01327
+[2,   116] loss: 0.01283
+[2,   174] loss: 0.01275
+[2,   232] loss: 0.01242
+Time elapsed: 0h:11m:38s
+train explained_variance_score: 12.23 %
+val loss: 0.01236
+val explained_variance_score: 4.63 %
+[3,    58] loss: 0.01333
+[3,   116] loss: 0.01318
+[3,   174] loss: 0.01255
+[3,   232] loss: 0.01219
+Time elapsed: 0h:15m:47s
+train explained_variance_score: 9.08 %
+val loss: 0.01205
+val explained_variance_score: 6.09 %
+[4,    58] loss: 0.01274
+[4,   116] loss: 0.01293
+[4,   174] loss: 0.01213
+[4,   232] loss: 0.01215
+Time elapsed: 0h:19m:57s
+train explained_variance_score: 9.90 %
+val loss: 0.01202
+val explained_variance_score: 7.36 %
+[5,    58] loss: 0.01213
+[5,   116] loss: 0.01202
+[5,   174] loss: 0.01227
+[5,   232] loss: 0.01224
+Time elapsed: 0h:24m:5s
+train explained_variance_score: -5.78 %
+val loss: 0.02129
+val explained_variance_score: -0.76 %
+[6,    58] loss: 0.01112
+[6,   116] loss: 0.01158
+[6,   174] loss: 0.01209
+[6,   232] loss: 0.01206
+Time elapsed: 0h:28m:14s
+train explained_variance_score: 9.94 %
+val loss: 0.10114
+val explained_variance_score: -149.12 %
+[7,    58] loss: 0.01213
+[7,   116] loss: 0.01217
+[7,   174] loss: 0.01228
+[7,   232] loss: 0.01232
+Time elapsed: 0h:32m:22s
+train explained_variance_score: -2.90 %
+val loss: 0.01699
+val explained_variance_score: 0.83 %
+[8,    58] loss: 0.01027
+[8,   116] loss: 0.01158
+[8,   174] loss: 0.01203
+[8,   232] loss: 0.01196
+Time elapsed: 0h:36m:30s
+train explained_variance_score: 1.37 %
+val loss: 0.01327
+val explained_variance_score: 1.88 %
+[9,    58] loss: 0.01186
+[9,   116] loss: 0.01160
+[9,   174] loss: 0.01228
+[9,   232] loss: 0.01252
+Time elapsed: 0h:40m:38s
+train explained_variance_score: 5.14 %
+val loss: 0.01278
+val explained_variance_score: -0.18 %
+[10,    58] loss: 0.01339
+[10,   116] loss: 0.01348
+[10,   174] loss: 0.01348
+[10,   232] loss: 0.01327
+Time elapsed: 0h:44m:46s
+train explained_variance_score: -0.59 %
+val loss: 0.01261
+val explained_variance_score: 0.59 %
+[11,    58] loss: 0.01215
+[11,   116] loss: 0.01325
+[11,   174] loss: 0.01273
+[11,   232] loss: 0.01293
+Time elapsed: 0h:48m:53s
+train explained_variance_score: 7.35 %
+val loss: 0.02937
+val explained_variance_score: 0.56 %
+[12,    58] loss: 0.01344
+[12,   116] loss: 0.01291
+[12,   174] loss: 0.01278
+[12,   232] loss: 0.01286
+Time elapsed: 0h:53m:1s
+train explained_variance_score: -0.34 %
+val loss: 0.01338
+val explained_variance_score: 0.77 %
+[13,    58] loss: 0.01268
+[13,   116] loss: 0.01261
+[13,   174] loss: 0.01257
+[13,   232] loss: 0.01270
+Time elapsed: 0h:57m:10s
+train explained_variance_score: -5.64 %
+val loss: 0.01278
+val explained_variance_score: 0.72 %
+[14,    58] loss: 0.01188
+[14,   116] loss: 0.01273
+[14,   174] loss: 0.01296
+[14,   232] loss: 0.01270
+Time elapsed: 1h:1m:18s
+train explained_variance_score: -1.40 %
+val loss: 0.01238
+val explained_variance_score: 2.33 %
+[15,    58] loss: 0.01343
+[15,   116] loss: 0.01235
+[15,   174] loss: 0.01267
+[15,   232] loss: 0.01273
+Time elapsed: 1h:5m:25s
+train explained_variance_score: -5.61 %
+val loss: 0.01328
+val explained_variance_score: -0.91 %
+[16,    58] loss: 0.01168
+[16,   116] loss: 0.01237
+[16,   174] loss: 0.01279
+[16,   232] loss: 0.01253
+Time elapsed: 1h:9m:33s
+train explained_variance_score: 1.07 %
+val loss: 0.01234
+val explained_variance_score: 4.10 %
+[17,    58] loss: 0.01254
+[17,   116] loss: 0.01282
+[17,   174] loss: 0.01263
+[17,   232] loss: 0.01250
+Time elapsed: 1h:13m:39s
+train explained_variance_score: -2.41 %
+val loss: 0.01221
+val explained_variance_score: 4.12 %
+[18,    58] loss: 0.01296
+[18,   116] loss: 0.01301
+[18,   174] loss: 0.01268
+[18,   232] loss: 0.01269
+Time elapsed: 1h:17m:27s
+train explained_variance_score: 9.86 %
+val loss: 0.01418
+val explained_variance_score: 0.06 %
+[19,    58] loss: 0.01400
+[19,   116] loss: 0.01316
+[19,   174] loss: 0.01317
+[19,   232] loss: 0.01294
+Time elapsed: 1h:21m:15s
+train explained_variance_score: -3.55 %
+val loss: 0.01307
+val explained_variance_score: 0.00 %
+[20,    58] loss: 0.01329
+[20,   116] loss: 0.01304
+[20,   174] loss: 0.01262
+[20,   232] loss: 0.01279
+Time elapsed: 1h:25m:4s
+train explained_variance_score: 0.69 %
+val loss: 0.01268
+val explained_variance_score: 0.40 %
+[21,    58] loss: 0.01241
+[21,   116] loss: 0.01220
+[21,   174] loss: 0.01243
+[21,   232] loss: 0.01251
+Time elapsed: 1h:28m:52s
+train explained_variance_score: 3.96 %
+val loss: 0.02904
+val explained_variance_score: -10.18 %
+[22,    58] loss: 0.01322
+[22,   116] loss: 0.01284
+[22,   174] loss: 0.01240
+[22,   232] loss: 0.01222
+Time elapsed: 1h:32m:41s
+train explained_variance_score: 8.60 %
+val loss: 0.01333
+val explained_variance_score: 3.00 %
+[23,    58] loss: 0.01237
+[23,   116] loss: 0.01203
+[23,   174] loss: 0.01213
+[23,   232] loss: 0.01209
+Time elapsed: 1h:36m:30s
+train explained_variance_score: 2.82 %
+val loss: 0.01276
+val explained_variance_score: 4.18 %
+[24,    58] loss: 0.01156
+[24,   116] loss: 0.01142
+[24,   174] loss: 0.01205
+[24,   232] loss: 0.01205
+Time elapsed: 1h:40m:19s
+train explained_variance_score: 4.45 %
+val loss: 0.01225
+val explained_variance_score: 4.80 %
+[25,    58] loss: 0.01186
+[25,   116] loss: 0.01226
+[25,   174] loss: 0.01224
+[25,   232] loss: 0.01210
+Time elapsed: 1h:44m:7s
+train explained_variance_score: 6.40 %
+val loss: 0.01262
+val explained_variance_score: 4.77 %
+[26,    58] loss: 0.01141
+[26,   116] loss: 0.01166
+[26,   174] loss: 0.01175
+[26,   232] loss: 0.01188
+Time elapsed: 1h:47m:55s
+train explained_variance_score: 7.21 %
+val loss: 0.01384
+val explained_variance_score: 4.28 %
+[27,    58] loss: 0.01181
+[27,   116] loss: 0.01150
+[27,   174] loss: 0.01168
+[27,   232] loss: 0.01177
+Time elapsed: 1h:51m:44s
+train explained_variance_score: 11.73 %
+val loss: 0.01397
+val explained_variance_score: 2.35 %
+[28,    58] loss: 0.01190
+[28,   116] loss: 0.01166
+[28,   174] loss: 0.01182
+[28,   232] loss: 0.01192
+Time elapsed: 1h:55m:33s
+train explained_variance_score: 14.77 %
+val loss: 0.01204
+val explained_variance_score: 5.52 %
+[29,    58] loss: 0.01174
+[29,   116] loss: 0.01202
+[29,   174] loss: 0.01177
+[29,   232] loss: 0.01180
+Time elapsed: 1h:59m:21s
+train explained_variance_score: 8.79 %
+val loss: 0.01204
+val explained_variance_score: 5.11 %
+[30,    58] loss: 0.01194
+[30,   116] loss: 0.01230
+[30,   174] loss: 0.01169
+[30,   232] loss: 0.01164
+Time elapsed: 2h:3m:10s
+train explained_variance_score: 7.83 %
+val loss: 0.01217
+val explained_variance_score: 5.38 %
+[31,    58] loss: 0.01131
+[31,   116] loss: 0.01150
+[31,   174] loss: 0.01129
+[31,   232] loss: 0.01165
+Time elapsed: 2h:7m:0s
+train explained_variance_score: 7.36 %
+val loss: 0.01200
+val explained_variance_score: 5.99 %
+[32,    58] loss: 0.01184
+[32,   116] loss: 0.01137
+[32,   174] loss: 0.01123
+[32,   232] loss: 0.01158
+Time elapsed: 2h:10m:49s
+train explained_variance_score: 9.59 %
+val loss: 0.01297
+val explained_variance_score: 6.26 %
+[33,    58] loss: 0.01131
+[33,   116] loss: 0.01088
+[33,   174] loss: 0.01108
+[33,   232] loss: 0.01153
+Time elapsed: 2h:14m:39s
+train explained_variance_score: 6.40 %
+val loss: 0.01350
+val explained_variance_score: 4.03 %
+[34,    58] loss: 0.01098
+[34,   116] loss: 0.01126
+[34,   174] loss: 0.01121
+[34,   232] loss: 0.01139
+Time elapsed: 2h:18m:33s
+train explained_variance_score: 9.32 %
+val loss: 0.01476
+val explained_variance_score: 6.02 %
+[35,    58] loss: 0.01192
+[35,   116] loss: 0.01147
+[35,   174] loss: 0.01134
+[35,   232] loss: 0.01137
+Time elapsed: 2h:22m:23s
+train explained_variance_score: 17.88 %
+val loss: 0.01186
+val explained_variance_score: 6.61 %
+[36,    58] loss: 0.01125
+[36,   116] loss: 0.01099
+[36,   174] loss: 0.01137
+[36,   232] loss: 0.01138
+Time elapsed: 2h:26m:14s
+train explained_variance_score: 13.84 %
+val loss: 0.01204
+val explained_variance_score: 7.04 %
+[37,    58] loss: 0.01192
+[37,   116] loss: 0.01147
+[37,   174] loss: 0.01140
+[37,   232] loss: 0.01128
+Time elapsed: 2h:30m:3s
+train explained_variance_score: 8.12 %
+val loss: 0.01214
+val explained_variance_score: 7.27 %
+[38,    58] loss: 0.01189
+[38,   116] loss: 0.01153
+[38,   174] loss: 0.01146
+[38,   232] loss: 0.01128
+Time elapsed: 2h:33m:46s
+train explained_variance_score: 20.22 %
+val loss: 0.01179
+val explained_variance_score: 7.69 %
+[39,    58] loss: 0.01171
+[39,   116] loss: 0.01127
+[39,   174] loss: 0.01142
+[39,   232] loss: 0.01121
+Time elapsed: 2h:37m:28s
+train explained_variance_score: 20.17 %
+val loss: 0.01172
+val explained_variance_score: 8.04 %
+[40,    58] loss: 0.01162
+[40,   116] loss: 0.01128
+[40,   174] loss: 0.01170
+[40,   232] loss: 0.01103
+Time elapsed: 2h:41m:10s
+train explained_variance_score: 0.83 %
+val loss: 0.01175
+val explained_variance_score: 7.33 %
+[41,    58] loss: 0.01014
+[41,   116] loss: 0.01045
+[41,   174] loss: 0.01085
+[41,   232] loss: 0.01093
+Time elapsed: 2h:44m:57s
+train explained_variance_score: 12.85 %
+val loss: 0.01173
+val explained_variance_score: 7.51 %
+[42,    58] loss: 0.00972
+[42,   116] loss: 0.01027
+[42,   174] loss: 0.01050
+[42,   232] loss: 0.01091
+Time elapsed: 2h:48m:43s
+train explained_variance_score: 5.75 %
+val loss: 0.01183
+val explained_variance_score: 6.74 %
+[43,    58] loss: 0.01034
+[43,   116] loss: 0.01028
+[43,   174] loss: 0.01084
+[43,   232] loss: 0.01084
+Time elapsed: 2h:52m:30s
+train explained_variance_score: 15.26 %
+val loss: 0.01184
+val explained_variance_score: 7.15 %
+[44,    58] loss: 0.01144
+[44,   116] loss: 0.01105
+[44,   174] loss: 0.01123
+[44,   232] loss: 0.01074
+Time elapsed: 2h:56m:18s
+train explained_variance_score: 21.73 %
+val loss: 0.01190
+val explained_variance_score: 6.12 %
+[45,    58] loss: 0.00904
+[45,   116] loss: 0.01000
+[45,   174] loss: 0.01066
+[45,   232] loss: 0.01082
+Time elapsed: 3h:0m:3s
+train explained_variance_score: 14.00 %
+val loss: 0.01191
+val explained_variance_score: 6.58 %
+[46,    58] loss: 0.01101
+[46,   116] loss: 0.01066
+[46,   174] loss: 0.01009
+[46,   232] loss: 0.01076
+Time elapsed: 3h:3m:50s
+train explained_variance_score: 18.33 %
+val loss: 0.01194
+val explained_variance_score: 6.57 %
+[47,    58] loss: 0.01093
+[47,   116] loss: 0.01083
+[47,   174] loss: 0.01091
+[47,   232] loss: 0.01075
+Time elapsed: 3h:7m:37s
+train explained_variance_score: 15.32 %
+val loss: 0.01183
+val explained_variance_score: 6.66 %
+[48,    58] loss: 0.01005
+[48,   116] loss: 0.01084
+[48,   174] loss: 0.01083
+[48,   232] loss: 0.01074
+Time elapsed: 3h:11m:25s
+train explained_variance_score: 29.37 %
+val loss: 0.01190
+val explained_variance_score: 6.58 %
+[49,    58] loss: 0.01017
+[49,   116] loss: 0.01000
+[49,   174] loss: 0.01031
+[49,   232] loss: 0.01074
+Time elapsed: 3h:15m:13s
+train explained_variance_score: 30.55 %
+val loss: 0.01188
+val explained_variance_score: 6.38 %
+[50,    58] loss: 0.01056
+[50,   116] loss: 0.01054
+[50,   174] loss: 0.01049
+[50,   232] loss: 0.01060
+Time elapsed: 3h:19m:3s
+train explained_variance_score: 21.60 %
+val loss: 0.01209
+val explained_variance_score: 5.73 %
+[51,    58] loss: 0.01017
+[51,   116] loss: 0.01054
+[51,   174] loss: 0.01041
+[51,   232] loss: 0.01063
+Time elapsed: 3h:22m:56s
+train explained_variance_score: 19.04 %
+val loss: 0.01184
+val explained_variance_score: 7.04 %
+[52,    58] loss: 0.01027
+[52,   116] loss: 0.01062
+[52,   174] loss: 0.01078
+[52,   232] loss: 0.01067
+Time elapsed: 3h:26m:44s
+train explained_variance_score: 29.87 %
+val loss: 0.01202
+val explained_variance_score: 5.45 %
+[53,    58] loss: 0.00936
+[53,   116] loss: 0.01089
+[53,   174] loss: 0.01078
+[53,   232] loss: 0.01065
+Time elapsed: 3h:30m:28s
+train explained_variance_score: 20.98 %
+val loss: 0.01190
+val explained_variance_score: 6.07 %
+[54,    58] loss: 0.01110
+[54,   116] loss: 0.01086
+[54,   174] loss: 0.01054
+[54,   232] loss: 0.01054
+Time elapsed: 3h:34m:10s
+train explained_variance_score: 24.79 %
+val loss: 0.01198
+val explained_variance_score: 5.57 %
+Early stopping with window mode at epoch 54.
+Best results were achieved at epoch 39 with val metric score = 0.011719632519679701.
+Best window of size 2 achieved a mean result of 0.011734936704747697 and started at epoch 39.
+Total time elapsed: 3h:34m:48s
+Writing model to disk...
+----------------------
+Re-evaluatiing on validation data: 
+----------------------
+eval loss: 0.01198
+eval explained_variance_score: 5.57 %
+----------------------
+Evaluation on holdout data: 
+----------------------
+eval loss: 159133.83206
+eval explained_variance_score: 0.02 %
+---------------- CNNpipeline completed ----------------
+RAN FOR 3:41:52s
