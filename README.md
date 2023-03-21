@@ -12,7 +12,7 @@ or the inference function.
 
 As mentioned in the section above, this repository contains two directories which contain the pipeline to train the ResNet50 model with two confound debiasing techniques. Also, the directory `raw and reweighing` contains the config files to train the raw model without any debiasing technique during the training. 
 
-### Training a raw model
+### - Training a raw model
 
 To train a raw model, you have to forward to the path where the python file that will run the CNN training pipeline is located. 
 ```
@@ -26,7 +26,7 @@ The command `nohup` allows to keep the training running in the GPU even when we 
 
 Now the training will start in the GPU. 
 
-### Training a model with Reweighing approach
+### - Training a model with Reweighing approach
 
 To train a model with the reweighing debiasing technique, the steps are similar to the raw model. You have to forward to the path where the python file that will run the CNN training pipeline is located. 
 ```
@@ -39,7 +39,7 @@ nohup python runCNNpipeline.py Reweighing-Sex-brain-volume  &> Reweighing-Sex-br
 
 Now the training will start in the GPU. 
 
-### Training a model with PMDN approach
+### - Training a model with PMDN approach
 
 To train a model with the reweighing debiasing technique, the steps are similar to the raw model, but this time you have to be located in the 'PMDN` Directory. You have to forward to the path where the python file that will run the CNN training pipeline is located, which now is:
 ```
