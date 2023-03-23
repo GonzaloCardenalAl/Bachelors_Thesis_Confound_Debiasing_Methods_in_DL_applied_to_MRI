@@ -51,3 +51,12 @@ nohup python runCNNpipeline.py PMDNResNet-sex  &> PMDNResNet-sex &
 ```
 
 Now the training will start in the GPU. 
+
+## The Partial Confound Test (PCT) and the Total Confound Test (TCT)
+
+To compute the biased scores, all the test were run in the notebook available in the following directory:
+```
+/ritter/share/archive/Thesis_GonzaloCardenal/thesis_code/raw_and_reweighing/CNNpipeline/plot_results/test_partial_confound_test-reweighing.ipynb
+```
+
+For any doubts about the project, contact gonzalocardenalal@gmail.com
